@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+body{
+    height: 100vh;
+    margin: 0px;
+    padding: 0px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.padding-left-30px{
+    padding-left: 30px;
+}
+
+:root{
+    --primary-color: #180161;
+    --secondary-color: #2E236C;
+    --yellow: #FABC3F;
+    --teal: #41B3A2;
+    --black: #1E201E;
+    --grey: grey;
+    --white: white;
+}
+
+header{
+    height: 100px;
+    width: 100%;
+    border-bottom: 4px solid;
+    border-bottom-color: var(--teal);
+    background: var(--primary-color);
+}
+
+nav{
+    display: flex;
+    flex-direction: row;
+    float: right;
+    margin-top: 20px;
+}
+
+nav ul{
+    list-style: none;
+    position: absolute;
+    right: 0px;
+
+}
+
+nav li{
+    display: inline;
+    padding: 16px 20px;
+    background-color: var(--primary-color);
+}
+nav li a{
+    color: var(--teal);
+    font-size: 17px;
+    text-decoration: none;
+}
+
+nav li a:hover{
+    color: var(--secondary-color)
+}
+
+.galeria article{
+    margin: 1rem;
+    width: 400px;
+    height: 400px;
+    border: 2px solid #f3f3f3;
+    border-radius: 10px;
+    overflow: hidden;
+    display: grid;
+    place-items: center;
+}
+
+.galeria section{
+    display: grid;
+    place-items: center;
+}
+
+.galeria img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.galeria:hover img{
+    transform: scale(1.5);
+
+}
+
+.galeria img{
+    transition: transform 0.5s ease-in-out;
+}
